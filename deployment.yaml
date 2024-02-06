@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mywebapp
-        image: acha30/csharp:latest
+        image: acha30/csharp:dev-6650
          resources:
           limits:
             memory: "128Mi"
