@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
       - name: mywebapp
-        image: acha30/csharp:dev-6650
-         resources:
+        image: 'acha30/csharp:dev-6650'
+        resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
