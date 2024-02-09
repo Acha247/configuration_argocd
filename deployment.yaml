@@ -1,8 +1,8 @@
 apiVersion: apps/1
 kind: Deployment
-namespace: test
 metadata:
-  name: mywebapp
+  name: mywebapp-deployment
+  namespace: test
 spec:
   replicas: 1
   selector:
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mywebapp
-        image: acha30/csharp:latest
+        image: acha30/csharp:dev-6650
          resources:
           limits:
             memory: "128Mi"
