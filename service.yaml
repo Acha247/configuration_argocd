@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: MyWebApp-svc
+  name: mywebapp-svc
   namespace: test
 spec:
   selector:
