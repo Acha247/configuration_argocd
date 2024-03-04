@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mywebapp-deployment
+  name: weather-deployment
   namespace: test
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mywebapp
+      app: weatherApp
   template:
     metadata:
       labels:
-        app: mywebapp
+        app: weatherApp
     spec:
       containers:
-      - name: mywebapp
-        image: 'acha30/csharp:dev-6650'
+      - name: weatherApp
+        image: 'acha30/weather:v1'
         resources:
           limits:
             memory: "128Mi"
