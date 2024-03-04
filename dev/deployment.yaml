@@ -7,14 +7,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: weatherApp
+      app: WeatherApp
   template:
     metadata:
       labels:
-        app: weatherApp
+        app: WeatherApp
     spec:
       containers:
-      - name: weatherApp
+      - name: weather
         image: 'acha30/weather:v1'
         resources:
           limits:
